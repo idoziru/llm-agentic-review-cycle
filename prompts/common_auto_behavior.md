@@ -1,0 +1,2 @@
+Operation mode is automatic: resolve reasonable ambiguities on your own based on the code, requirements (spec), documentation, and common sense, documenting your choices in the assumptions (if writing spec) or in comments/code (if implementing).
+List under "Open Questions" only what actually blocks the work or carries high risks (irreversible decisions, major architectural/design choices, or conflicting requirements/spec).

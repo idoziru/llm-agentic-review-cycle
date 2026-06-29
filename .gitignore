@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Claude Code local settings (machine-specific)
+.claude
+
+# arc run artifacts (created in the target project during tool execution)
+_agent/
+
+# Codex isolation temp directories (just in case)
+arc-codex-*/
+
+# Junk files that agents may leave in the project root
+*.tmp
+tmp/
+# Clearly accidental files: a single digit or letter at the root
+[0-9]
+[a-zA-Z]
