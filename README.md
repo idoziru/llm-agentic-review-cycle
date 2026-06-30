@@ -59,65 +59,14 @@ Assets (`prompts/`, `models.md`) must be located next to the `arc` script — a 
 
 ## Connecting providers
 
-At least one CLI provider must be installed and configured.
+At least one CLI provider must be installed and configured. New agentic CLI tools appear constantly and their installation steps change frequently — the most reliable way to get up-to-date instructions is to search for the provider name followed by "cli install", e.g.:
 
-### Claude CLI (Claude Code)
+- `claude cli how to install`
+- `codex cli how to install`
+- `mimo code how to install`
+- `antigravity agy cli how to install`
 
-1. **Install** — requires Node.js 18+:
-   ```bash
-   npm install -g @anthropic-ai/claude-code
-   ```
-2. **Authenticate**:
-   ```bash
-   claude login
-   ```
-3. **Verify**:
-   ```bash
-   claude --version
-   ```
-
-### Codex CLI
-
-1. **Install**:
-   ```bash
-   curl -fsSL https://chatgpt.com/codex/install.sh | sh
-   ```
-   or via npm:
-   ```bash
-   npm install -g @openai/codex
-   ```
-2. **Authenticate**:
-   ```bash
-   codex login
-   ```
-3. **Verify**:
-   ```bash
-   codex doctor
-   ```
-
-### MiMo CLI (MiMo Code)
-
-1. **Install**: follow the instructions on the [official site](https://mimo.xiaomi.com/mimocode/install). The binary is installed to `~/.mimocode/bin/mimo`.
-2. **Authenticate**: not required for the free `mimo/mimo-auto` model. For paid models:
-   ```bash
-   mimo auth login
-   ```
-3. **Verify**:
-   ```bash
-   mimo --version
-   ```
-
-### Antigravity CLI (agy)
-
-1. **Install**:
-   ```bash
-   agy install
-   ```
-2. **Authenticate**: happens interactively on first use — the CLI opens OAuth in a browser and asks you to paste the token back into the console.
-3. **Verify**:
-   ```bash
-   agy --version
-   ```
+Once installed, add the provider's models to [`models.md`](models.md) if they aren't there yet (see [Managing the model list](#managing-the-model-list) below).
 
 ## Model check (`arc --test`)
 
