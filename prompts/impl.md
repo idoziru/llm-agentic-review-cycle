@@ -7,6 +7,9 @@ Implement the task according to the approved spec by modifying the project code.
 User task (for reference; the source of truth is spec.md):
 {{TASK}}
 
+User answers to clarifying questions (can be empty; the spec should already reflect them, but consult them if the spec is ambiguous):
+{{ANSWERS}}
+
 Important: this invocation is independent (stateless). First, explore the current state of the code—it might have changed during previous iterations.
 {{PRIOR_RUN_NOTE}}
 

@@ -948,6 +948,9 @@ def review_loop(agent_dir, state, save, kind):
                 "TASK": state["task"],
                 "LOG": context,
                 "ANSWERS": read_text(paths["answers"]),
+                # Previous iteration's review: the reviewer has not overwritten
+                # the file yet at this point, so it still holds the prior verdict.
+                "PREV_REVIEW": read_text(review_path),
             }
             print(dim_e(f"→ Reviewer ({phase_name})..."), file=sys.stderr)
             text, stop = run_step(state["reviewer"],

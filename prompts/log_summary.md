@@ -4,8 +4,7 @@ Summary Goal: save in a few points what is important for future iterations and h
 
 Language: Detect the language of the entries from the context of {{PREV_SUMMARY}} and {{NEW_ENTRIES}}, and use that exact language for the output summary.
 
-Style requirements:
-Write clearly, concretely, and to the point. Use simple words and short sentences. Avoid bureaucratic language (bureaucracy/cliches/corporate speak) and unnecessary introductory phrases. Keep it concise and free of fluff, as if a real person is explaining it simply.
+{{include:common_style}}
 
 Current summary of prior iterations (could be empty):
 {{PREV_SUMMARY}}

@@ -64,8 +64,8 @@ spec.loader.exec_module(d)
 prov = {"explore":{"TASK","LOG"},
         "spec_write":{"TASK","LOG","ANSWERS","SPEC_REVIEW","PRIOR_RUN_NOTE"},
         "impl":{"TASK","LOG","ANSWERS","IMPL_REVIEW","PRIOR_RUN_NOTE"},
-        "spec_review":{"TASK","LOG","ANSWERS"},
-        "impl_review":{"TASK","LOG","ANSWERS"},
+        "spec_review":{"TASK","LOG","ANSWERS","PREV_REVIEW"},
+        "impl_review":{"TASK","LOG","ANSWERS","PREV_REVIEW"},
         "log_summary":{"PREV_SUMMARY","NEW_ENTRIES"}}
 for f in glob.glob("prompts/*.md"):
     n=os.path.basename(f)[:-3]

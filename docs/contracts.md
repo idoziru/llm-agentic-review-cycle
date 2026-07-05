@@ -14,7 +14,7 @@ mapping of the corresponding step in `arc`:
 | `explore` | phase0 | `TASK, LOG` |
 | `spec_write` | `dev_map` | `TASK, LOG, ANSWERS, SPEC_REVIEW, PRIOR_RUN_NOTE` |
 | `impl` | `dev_map` | `TASK, LOG, ANSWERS, IMPL_REVIEW, PRIOR_RUN_NOTE` |
-| `spec_review`, `impl_review` | `rev_map` | `TASK, LOG, ANSWERS` |
+| `spec_review`, `impl_review` | `rev_map` | `TASK, LOG, ANSWERS, PREV_REVIEW` |
 | `log_summary` | summary | `PREV_SUMMARY, NEW_ENTRIES` |
 
 Extra keys in the mapping are harmless (ignored). Missing keys are a bug. When
