@@ -21,9 +21,9 @@ unconfirmed full names.
 
 <!-- models:claude:start -->
 
+claude-fable-5
 claude-opus-4-8
 claude-sonnet-5
-claude-sonnet-4-6
 claude-haiku-4-5
 
 <!-- models:claude:end -->
@@ -40,6 +40,9 @@ Only that model is included in the list.
 
 <!-- models:codex:start -->
 
+gpt-5.6-sol medium
+gpt-5.6-terra medium
+gpt-5.6-luna medium
 gpt-5.5
 gpt-5.4
 gpt-5.4-mini
